@@ -12,6 +12,7 @@
 
 <body>
   <header class="header">
+
     <div class="menu">
       <img class="logo" src="/svg/noemi-logo.svg" alt="Логотип">
 
@@ -38,6 +39,14 @@
         </ul>
       </nav>
     </div>
+
+    <svg class="burger" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m4.5 6.5h12" />
+        <path d="m4.498 10.5h11.997" />
+        <path d="m4.5 14.5h11.995" />
+      </g>
+    </svg>
 
     <h1 class="header-title">Блог о творчестве, спорте и образе жизни</h1>
 
@@ -407,7 +416,11 @@
     <h2 class="text">Наши изделия</h2>
     <section class="shops">
       <div class="product">
-        <img class="product-img" src="/images/shop-item-desk1.jpg" alt="pillow">
+        <picture class="product-img">
+          <source srcset="/images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+          <source srcset="/images/shop-item-tablet1.jpg" media="(min-width: 641px)">
+          <img class="product-img" src="/images/shop-item-desk1.jpg" alt="pillow">
+        </picture>
         <article class="shop-item">
 
           <h2 class="product-text">Подушки на диван</h2>
@@ -428,7 +441,11 @@
       </div>
 
       <div class="product">
-        <img class="product-img" src="/images/shop-item-desk2.jpg" alt="doll">
+        <picture class="product-img">
+          <source srcset="/images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+          <source srcset="/images/shop-item-tablet2.jpg" media="(min-width: 641px)">
+          <img class="product-img" src="/images/shop-item-desk2.jpg" alt="doll">
+        </picture>
         <article class="shop-item">
 
           <h2 class="product-text">Кукла «Зайчик»</h2>
@@ -447,7 +464,11 @@
       </div>
 
       <div class="product">
-        <img class="product-img" src="/images/shop-item-desk3.jpg" alt="frame">
+        <picture class="product-img">
+          <source srcset="/images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+          <source srcset="/images/shop-item-tablet3.jpg" media="(min-width: 641px)">
+          <img class="product-img" src="/images/shop-item-desk3.jpg" alt="frame">
+        </picture>
 
         <article class="shop-item">
           <h2 class="product-text">Шестиугольная рамка</h2>
@@ -494,7 +515,7 @@
     </small>
   </footer>
 
-  <div class="popup-wrapper_hidden">
+  <div class="popup-wrapper__hidden">
     <div class="popup">
       <h2 class="text">Ваш фидбек</h2>
       <form class="form-row">
@@ -510,17 +531,17 @@
 
       <form class="newsletter">
         <span class="question">Вы подписаны на e-mail рассылку?</span>
-      
-          <label class="radio-group">
-            <input type="radio" class="radio" name="yes-no">
-            <span class="radio-group__text">Да</span>
-          </label>
 
-          <label class="radio-group">
-            <input type="radio" class="radio" name="yes-no">
-            <span class="radio-group__text">Нет</span>
-          </label>
-        
+        <label class="radio-group">
+          <input type="radio" class="radio" name="yes-no">
+          <span class="radio-group__text">Да</span>
+        </label>
+
+        <label class="radio-group">
+          <input type="radio" class="radio" name="yes-no">
+          <span class="radio-group__text">Нет</span>
+        </label>
+
       </form>
 
       <form class="content-question">
@@ -531,7 +552,7 @@
 
         <img class="close" src="/svg/form-x.svg" alt="close">
       </form>
-      
+
     </div>
   </div>
 
