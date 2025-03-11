@@ -489,7 +489,7 @@ body {
   height: 48px;
 
   background-color: #b59f5b;
-  background-image: url("../svg/search.svg");
+  background-image: url("./svg/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
