@@ -771,17 +771,17 @@ span {
 }
 
 .social-link-dribbble {
-  background-image: url("svg/001-dribbble.svg");
+  background-image: url(".././svg/001-dribbble.svg");
   background-color: #f4f7f6;
 }
 
 .social-link-pinterest {
-  background-image: url("svg/001-pinterest.svg");
+  background-image: url(".././svg/001-pinterest.svg");
   background-color: #f4f7f6;
 }
 
 .social-link-tumblr {
-  background-image: url("svg/003-tumblr.svg");
+  background-image: url(".././svg/003-tumblr.svg");
   background-color: #f4f7f6;
 }
 
@@ -853,7 +853,7 @@ span {
   box-sizing: border-box;
   background-color: #f4f7f6;
 
-  background-image: url("svg/form-arrows.svg");
+  background-image: url(".././svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 10px;
@@ -891,14 +891,14 @@ span {
   width: 20px;
   height: 20px;
 
-  background-image: url("svg/form-empty-circle.svg");
+  background-image: url(".././svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: bottom -5px center;
   background-size: 20px;
 }
 
 .radio:checked+.radio-group__text::before {
-  background-image: url("svg/form-circle.svg");
+  background-image: url(".././svg/form-circle.svg");
 }
 
 
@@ -962,7 +962,7 @@ span {
 
 @media(max-width: 640px) {
   .header {
-    background-image: url("images/banner-mobile.jpg");
+    background-image: url(".././images/banner-mobile.jpg");
   }
 
   .navigator {
@@ -1020,7 +1020,7 @@ span {
   .header {
     max-width: 1200px;
     margin: 0 auto;
-    background-image: url("images/banner-bg-tablet.jpg");
+    background-image: url(".././images/banner-bg-tablet.jpg");
   }
 
   .navigator {
