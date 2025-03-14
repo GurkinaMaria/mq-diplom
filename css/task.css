@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Bold.woff");
+  src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -121,7 +121,6 @@ body {
   position: relative;
   z-index: 2;
   margin-top: 59px;
-  
 }
 
 .card {
@@ -129,7 +128,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   column-gap: 4px;
-  height: 233px;
 }
 
 .card-name {
@@ -648,6 +646,11 @@ span {
 
 }
 
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
 .shop-item {
   position: relative;
   display: flex;
@@ -662,6 +665,9 @@ span {
 }
 
 .product-img {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -771,17 +777,17 @@ span {
 }
 
 .social-link-dribbble {
-  background-image: url("svg/001-dribbble.svg");
+  background-image: url(".././svg/001-dribbble.svg");
   background-color: #f4f7f6;
 }
 
 .social-link-pinterest {
-  background-image: url("svg/001-pinterest.svg");
+  background-image: url("../svg/001-pinterest.svg");
   background-color: #f4f7f6;
 }
 
 .social-link-tumblr {
-  background-image: url("svg/003-tumblr.svg");
+  background-image: url("../svg/003-tumblr.svg");
   background-color: #f4f7f6;
 }
 
@@ -796,7 +802,6 @@ span {
   font-size: 12px;
   font-weight: 700;
   font-family: "Open Sans", "Arial", sans-serif;
-  ;
   color: #999999;
 }
 
@@ -853,7 +858,7 @@ span {
   box-sizing: border-box;
   background-color: #f4f7f6;
 
-  background-image: url(".././svg/form-arrows.svg");
+  background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 10px;
@@ -891,14 +896,14 @@ span {
   width: 20px;
   height: 20px;
 
-  background-image: url(".././svg/form-empty-circle.svg");
+  background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
-  background-position: bottom -5px center;
+  background-position: bottom center;
   background-size: 20px;
 }
 
 .radio:checked+.radio-group__text::before {
-  background-image: url(".././svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 
@@ -958,69 +963,16 @@ span {
   cursor: pointer;
   top: 25px;
   right: 15px;
+  z-index: 2;
 }
 
-@media(max-width: 640px) {
-  .header {
-    background-image: url(".././images/banner-mobile.jpg");
-  }
 
-  .navigator {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .logo {
-    width: 275px;
-    height: 65px;
-    margin: auto;
-    margin-top: 216px;  
-  }
-
-  .menu {
-    padding-bottom: 40px;
-  }
-
-  .header-title {
-    width: 328px;
-    font-size: 26px;
-    padding: 0 0 214px;
-  }
-
-  .card {
-    grid-template-columns: repeat(1, 1fr);
-
-    height: 230px;
-  }
-
-  .article-title {
-    font-size: 16px;
-  }
-
-  .container {
-   display: flex;
-   flex-direction: column;
-  }
-
-  .image {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .shops {
-    grid-template-columns: repeat(1, 1fr);
-
-}
 
 @media(min-width: 641px) and (max-width: 1200px) {
   .header {
     max-width: 1200px;
     margin: 0 auto;
-    background-image: url("./images/banner-bg-tablet.jpg");
+    background-image: url("../images/banner-bg-tablet.jpg");
   }
 
   .navigator {
@@ -1053,12 +1005,67 @@ span {
     max-width: 1200px;
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  @media(min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-    .card {
-      grid-template-columns: repeat(4, 1fr);
-    }
+@media(min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .card {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
-  
+
+@media(max-width: 640px) {
+  .header {
+    background-image: url(".././images/banner-mobile.jpg");
+  }
+
+  .navigator {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .logo {
+    width: 275px;
+    height: 65px;
+    margin: auto;
+    margin-top: 216px;
+  }
+
+  .menu {
+    padding-bottom: 40px;
+  }
+
+  .header-title {
+    width: 328px;
+    font-size: 26px;
+    padding: 0 0 214px;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+
+    height: 230px;
+  }
+
+  .article-title {
+    font-size: 16px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shops {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 }
