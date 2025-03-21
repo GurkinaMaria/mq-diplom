@@ -160,7 +160,8 @@ body {
 
   display: flex;
   align-items: end;
-  padding-bottom: 17px;
+  padding: 17px 22px;
+  
   font-family: "Open Sans", "Arial", sans-serif;
   background-image: url("../images/trend1.jpg");
   background-repeat: no-repeat;
@@ -189,7 +190,7 @@ body {
 
   display: flex;
   align-items: end;
-  padding-bottom: 17px;
+  padding: 17px 22px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   background-image: url("../images/trend2.jpg");
@@ -219,7 +220,7 @@ body {
 
   display: flex;
   align-items: end;
-  padding-bottom: 17px;
+  padding: 17px 22px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   background-image: url("../images/trend3.jpg");
@@ -248,7 +249,7 @@ body {
 
   display: flex;
   align-items: end;
-  padding-bottom: 17px;
+  padding: 17px 22px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   background-image: url("../images/trend4.jpg");
