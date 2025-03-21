@@ -661,7 +661,7 @@ span {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-grow: 1;
   flex-wrap: wrap;
 
   padding: 50px 20px;
@@ -673,10 +673,9 @@ span {
 .product-img {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   display: block;
-  margin-left: auto;
-  margin-right: auto
+  padding: 0 22px;
+  box-sizing: border-box;
 }
 
 .product-text {
@@ -1007,9 +1006,17 @@ span {
     height: 500px;
   }
 
+   .container {
+    padding: 0 35px;
+  }
+
   .shops {
     max-width: 1200px;
+    padding: 0 35px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .adress {
+    padding: 0 35px;
   }
 }
 
@@ -1060,6 +1067,11 @@ span {
   .container {
     display: flex;
     flex-direction: column;
+    padding: 45px 15px;
+  }
+
+  .wrap {
+    width: 100%;
   }
 
   .image {
@@ -1068,8 +1080,12 @@ span {
     flex-direction: column;
   }
 
+  .picture {
+    width: 100%;
+  }
+
   .shops {
     grid-template-columns: repeat(1, 1fr);
-
+    padding: 0 15px;
   }
 }
