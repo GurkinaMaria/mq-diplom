@@ -1004,7 +1004,7 @@ span {
 
   .card {
     grid-template-columns: repeat(2, 1fr);
-    height: 500px;
+    min-height: 500px;
   }
 
    .container {
