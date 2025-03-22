@@ -830,7 +830,6 @@ span {
   position: relative;
   display: none;
   flex-direction: column;
-  gap: 33px;
   background: #fff;
 
   box-sizing: border-box;
@@ -878,7 +877,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-
+  margin: 33px 0;
 }
 
 .radio {
