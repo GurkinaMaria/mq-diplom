@@ -1013,6 +1013,10 @@ span {
     font-size: 18px;
   }
 
+  .picture {
+    width: 100%
+  }
+
   .shops {
     max-width: 1200px;
     padding: 0 35px;
@@ -1097,6 +1101,10 @@ span {
 
   .shops {
     grid-template-columns: repeat(1, 1fr);
+    padding: 0 15px;
+  }
+
+   .adress {
     padding: 0 15px;
   }
 }
