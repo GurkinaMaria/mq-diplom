@@ -904,6 +904,8 @@ span {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 20px;
+  vertical-align: middle;
+  margin-right: 3px;
 }
 
 .radio:checked+.radio-group__text::before {
