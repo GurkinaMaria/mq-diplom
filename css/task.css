@@ -997,7 +997,7 @@ span {
     flex-direction: column;
   }
 
-  .news-title {
+  .article-title {
     font-size: 17px;
   }
 
@@ -1008,6 +1008,10 @@ span {
 
    .container {
     padding: 0 35px;
+  }
+
+  .text {
+    font-size: 18px;
   }
 
   .shops {
@@ -1060,6 +1064,14 @@ span {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .text {
+    font-size: 16px;
+  }
+
+  .text-second {
+    font-size: 16px;
+  }
+  
   .article-title {
     font-size: 16px;
   }
