@@ -1100,6 +1100,25 @@ span {
     width: 100%;
   }
 
+  .sidebar {
+    width: 100%;
+  }
+
+  .search-wrapper {
+    width: 100%;
+  }
+
+
+
+  .input{
+    width: 100%;
+  }
+
+  
+  .subscribe {
+    width: 100%;
+  }
+
   .image {
     position: relative;
     display: flex;
