@@ -1103,11 +1103,19 @@ span {
   .sidebar {
     width: 100%;
   }
-
-  .search-wrapper {
+  
+  .search-wrapper { 
     width: 100%;
   }
 
+
+  label {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
 
 
   .input{
